@@ -16,8 +16,8 @@ from keras.layers import (Conv2D, Input, ZeroPadding2D, Add,
                           UpSampling2D, MaxPooling2D, Concatenate)
 # from keras.layers.advanced_activations import LeakyReLU
 from keras.layers import ELU, PReLU, LeakyReLU
-from tensorflow.keras.layers import BatchNormalization
 # from keras.layers.normalization import BatchNormalization
+from tensorflow.keras.layers import BatchNormalization
 from keras.models import Model
 from keras.regularizers import l2
 from keras.utils.vis_utils import plot_model as plot
@@ -60,6 +60,7 @@ def unique_config_sections(config_file):
 def _main(args):
     config_path = os.path.expanduser(args.config_path)
     weights_path = os.path.expanduser(args.weights_path)
+    print("weights_path : {}".format(weights_path))
     assert config_path.endswith('.cfg'), '{} is not a .cfg file'.format(
         config_path)
     assert weights_path.endswith(
