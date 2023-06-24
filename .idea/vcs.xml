@@ -2,6 +2,9 @@
 <project version="4">
   <component name="VcsDirectoryMappings">
     <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/keras-yolo3" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/keras-yolo3-facedetection" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/real-time_image_processing_system" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/yolov3-detect-mosaic-face" vcs="Git" />
   </component>
 </project>
